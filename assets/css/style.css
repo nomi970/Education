@@ -2538,7 +2538,10 @@ color: #00AFEF !important;
         background-size: cover;
     }
     .blogs__hero_sec {
-        height: 50vh;
+        height: 45vh;
+    }
+    .services__hero_sec {
+        height: 45vh;
     }
 }
 
