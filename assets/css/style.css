@@ -944,7 +944,7 @@ button.accordion.active:after {
     /* height: 100vh; */
     height: 100%;
     /* padding: 100px 0px 20px 0px; */
-    margin-top: -24px;
+    margin-top: -60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1329,7 +1329,7 @@ color: #00AFEF;
     max-width: 1161px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .our_team__title p{
     font-family: Outfit;
