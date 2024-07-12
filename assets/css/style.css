@@ -443,17 +443,17 @@ h1,h2,h3,h4,h5,p{
 }
 .marquee__slider_sec marquee{
     font-family: Outfit;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 50px;
     text-align: left;
     color: #A6B2EF36;
     padding: 10px 0px;
 }
 .marquee__slider_sec marquee .bx{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     border-radius: 50px;
     background-color: #A6B2EF36;
 }
