@@ -60,8 +60,7 @@ h1,h2,h3,h4,h5,p{
     height: 40px;
 }
 .nav-items a:hover{
-    border-bottom: 2px solid #00AFEF;
-    color: var(--global_blue);
+    color: white;
 }
 .nav-items a.active{
     border-bottom: 2px solid #00AFEF;
@@ -76,7 +75,7 @@ h1,h2,h3,h4,h5,p{
     background: rgb(6, 231, 175);
 }
 .home_hero_sec{
-    background-image: url(../images/home_hero_bg.png);
+    background-image: url(../images/home_hero_bg2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* height: 100vh; */
@@ -84,6 +83,130 @@ h1,h2,h3,h4,h5,p{
     padding: 100px 0px 20px 0px;
     display: flex;
     align-items: center;
+}
+.home_hero_main{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+.home_hero_image{
+    position: relative;
+}
+.home_hero_image img {
+    /* position: absolute; */
+    animation: randomMotion 10s infinite;
+}
+@keyframes randomMotion {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(-10px, 10px);
+    }
+    75% {
+        transform: translate(-10px, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes randomDotsMotion {
+    0% {
+        transform: translate(20, -10);
+    }
+    25% {
+        transform: translate(30px, -20px);
+    }
+    50% {
+        transform: translate(-40px, -23px);
+    }
+    75% {
+        transform: translate(-50px, 20px);
+    }
+    100% {
+        transform: translate(10, -40);
+    }
+}
+.dots {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.dots img {
+    /* width: 50% !important; */
+    height: auto;
+}
+.d_1 img{
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    width: 36px !important;
+    height: 36px !important; 
+}
+.dots:nth-child(2) {
+    top: 50px;
+    right: 200px;
+    animation: randomDotsMotion 6s infinite;
+}
+.d_3 img{
+    width: 26px !important;
+    height: 26px !important; 
+}
+.dots:nth-child(3) {
+    bottom: 100px;
+    left: 0;
+    animation: randomDotsMotion 7s infinite;
+}
+.d_2 img{
+    width: 26px !important;
+    height: 26px !important; 
+}
+.dots:nth-child(4) {
+    top: 100px;
+    left: 0;
+    animation: randomDotsMotion 8s infinite;
+}
+.d_4 img{
+    width: 44px !important;
+    height: 44px !important; 
+}
+.dots:nth-child(5) {
+    bottom: 0;
+    right: 0;
+    animation: randomDotsMotion 9s infinite;
+}
+.d_5 img{
+    width: 22px !important;
+    height: 22px !important; 
+}
+.dots:nth-child(6) {
+    bottom: 0%;
+    left: 20%;
+    animation: randomDotsMotion 10s infinite;
+}
+.our__partner_main {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.swiper-slide{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.home_hero_image img{
+    width: 100%;
+    max-width: 500px;
 }
 .nav_login_btn{
     width: 131px;
@@ -94,6 +217,9 @@ h1,h2,h3,h4,h5,p{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+}
+.nav_login_btn:hover{
+    color: #00AFEF !important;
 }
 .nav_login_btn:hover{
     color: var(--global_blue);
@@ -823,13 +949,11 @@ button.accordion.active:after {
     align-items: center;
     flex-direction: column;
 }
-.about__us_hero_sec
-
 .about__us_title{
     max-width: 696px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .about__us_title p{
     font-family: Outfit;
@@ -1051,6 +1175,13 @@ button.accordion.active:after {
     max-width: 406px;
     text-align: center;
 }
+.o_team>img{
+    width: 100%;
+    max-width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .o_team h2{
     font-family: Outfit;
     font-size: 24px;
@@ -1198,7 +1329,7 @@ color: #00AFEF;
     max-width: 1161px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .our_team__title p{
     font-family: Outfit;
@@ -1949,6 +2080,10 @@ color: #00AFEF !important;
         gap: 30px;
         flex-wrap: wrap;
     }
+    .home_hero_main{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
     .contact_form{
         max-width: 550px;
     }
@@ -1978,6 +2113,72 @@ color: #00AFEF !important;
     }
 }
 @media screen and (max-width: 992px){
+}
+@keyframes randomDotsMotion {
+    0% {
+        transform: translate(35, 10);
+    }
+    25% {
+        transform: translate(-8px, -5px);
+    }
+    50% {
+        transform: translate(-40px, -23px);
+    }
+    75% {
+        transform: translate(-50px, 20px);
+    }
+    100% {
+        transform: translate(10, -40);
+    }
+}
+    .d_1 img{
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        width: 36px !important;
+        height: 36px !important; 
+    }
+    .dots:nth-child(2) {
+        top: 50px;
+        right: 50px;
+        animation: randomDotsMotion 6s infinite;
+    }
+    .d_3 img{
+        width: 26px !important;
+        height: 26px !important; 
+    }
+    .dots:nth-child(3) {
+        bottom: 100px;
+        left: 100px;
+        animation: randomDotsMotion 7s infinite;
+    }
+    .d_2 img{
+        width: 26px !important;
+        height: 26px !important; 
+    }
+    .dots:nth-child(4) {
+        top: 100px;
+        left: 80px;
+        animation: randomDotsMotion 8s infinite;
+    }
+    .d_4 img{
+        width: 30px !important;
+        height: 30px !important; 
+    }
+    .dots:nth-child(5) {
+        bottom: 0;
+        right: 0;
+        animation: randomDotsMotion 9s infinite;
+    }
+    .d_5 img{
+        width: 22px !important;
+        height: 22px !important; 
+    }
+    .dots:nth-child(6) {
+        bottom: -10%;
+        left: 30%;
+        animation: randomDotsMotion 10s infinite;
+    }
     .main-nav #nav-toggler{
         display: block;
         font-size: 20px;
@@ -2075,7 +2276,7 @@ color: #00AFEF !important;
         height: 100vh;
         z-index: 1;
     }
-}
+
 @media screen and (max-width: 992px){
 
     .navbar-collapse.show{

@@ -41,24 +41,63 @@
   </section>
   <section class="home_hero_sec">
     <div class="container">
-      <div class="home_hero_content">
-        <h2>Enter a Realm of Limitless Learning </h2>
-        <p>Where Education and Artificial Intelligence unite to create personalized, adaptive learning experiences
-          tailored to every student's unique journey.</p>
-        <button class="start_now_btn" type="button">Start now</button>
+      <div class="home_hero_main">
+        <div class="home_hero_content">
+          <h2>Enter a Realm of Limitless Learning </h2>
+          <p>Where Education and Artificial Intelligence unite to create personalized, adaptive learning experiences
+            tailored to every student's unique journey.</p>
+          <button class="start_now_btn" type="button">Start now</button>
+        </div>
+        <div class="home_hero_image">
+          <img src="./assets/images/motion_image.png" alt="">
+          <div class="dots d_1"><img src="./assets/images/icons/dot1.png" alt="dot1"></div>
+          <div class="dots d_2"><img src="./assets/images/icons/dot2.png" alt="dot2"></div>
+          <div class="dots d_3"><img src="./assets/images/icons/dot3.png" alt="dot3"></div>
+          <div class="dots d_4"><img src="./assets/images/icons/dot4.png" alt="dot4"></div>
+          <div class="dots d_5"><img src="./assets/images/icons/dot5.png" alt="dot5"></div>
+        </div>
       </div>
+
       <div class="our__partner_main">
         <h3>Our Partner</h3>
+        <div class="swiper mySwiper mt-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="partner_bx partner__1">
+                <img src="./assets/images/partner1.jpg" alt="partner1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner_bx partner__2">
+                <img src="./assets/images/partner2.jpg" alt="partner1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner_bx partner__1">
+                <img src="./assets/images/partner3.jpg" alt="partner1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner_bx partner__1">
+                <img src="./assets/images/partner1.jpg" alt="partner1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner_bx partner__2">
+                <img src="./assets/images/partner2.jpg" alt="partner1">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="partner_bx partner__1">
+                <img src="./assets/images/partner3.jpg" alt="partner1">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="our__partner_sub_main">
-          <div class="partner_bx partner__1">
-            <img src="./assets/images/partner1.jpg" alt="partner1">
-          </div>
-          <div class="partner_bx partner__2">
-            <img src="./assets/images/partner2.jpg" alt="partner1">
-          </div>
-          <div class="partner_bx partner__2">
-            <img src="./assets/images/partner3.jpg" alt="partner3">
-          </div>
+          
+         
+         
         </div>
       </div>
     </div>
@@ -409,7 +448,47 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="./assets/js/script.js"></script>
+<script>
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      550: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 
 
 </body>
