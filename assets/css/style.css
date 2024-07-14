@@ -120,19 +120,19 @@ h1,h2,h3,h4,h5,p{
 }
 @keyframes randomDotsMotion {
     0% {
-        transform: translate(80, -90);
+        transform: translate(20, -10);
     }
     25% {
-        transform: translate(120px, -120px);
+        transform: translate(30px, -20px);
     }
     50% {
-        transform: translate(-160px, 93px);
+        transform: translate(-40px, -23px);
     }
     75% {
-        transform: translate(-150px, 20px);
+        transform: translate(-50px, 20px);
     }
     100% {
-        transform: translate(100, -100);
+        transform: translate(10, -40);
     }
 }
 .dots {
@@ -153,9 +153,9 @@ h1,h2,h3,h4,h5,p{
     height: 36px !important; 
 }
 .dots:nth-child(2) {
-    top: -50px;
+    top: 50px;
     right: 200px;
-    animation: randomDotsMotion 7s infinite;
+    animation: randomDotsMotion 6s infinite;
 }
 .d_3 img{
     width: 26px !important;
@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,p{
 .dots:nth-child(3) {
     bottom: 100px;
     left: 0;
-    animation: randomDotsMotion 4s infinite;
+    animation: randomDotsMotion 7s infinite;
 }
 .d_2 img{
     width: 26px !important;
@@ -172,8 +172,8 @@ h1,h2,h3,h4,h5,p{
 }
 .dots:nth-child(4) {
     top: 100px;
-    left: 150px;
-    animation: randomDotsMotion 3s infinite;
+    left: 0;
+    animation: randomDotsMotion 8s infinite;
 }
 .d_4 img{
     width: 44px !important;
@@ -182,7 +182,7 @@ h1,h2,h3,h4,h5,p{
 .dots:nth-child(5) {
     bottom: 0;
     right: 0;
-    animation: randomDotsMotion 3s infinite;
+    animation: randomDotsMotion 9s infinite;
 }
 .d_5 img{
     width: 22px !important;
@@ -190,8 +190,8 @@ h1,h2,h3,h4,h5,p{
 }
 .dots:nth-child(6) {
     bottom: 0%;
-    left: 50%;
-    animation: randomDotsMotion 4s infinite;
+    left: 20%;
+    animation: randomDotsMotion 10s infinite;
 }
 .our__partner_main {
     max-width: 800px;
@@ -260,6 +260,16 @@ h1,h2,h3,h4,h5,p{
     text-align: center;
     color: #FFFFFF;
     margin-top: 30px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.start_now_btn:hover{
+    background-color: black;
+    color: white;
+    transition: linear all .3s;
+    border: 1px solid white
 }
 .our__partner_main h3{
     font-family: Outfit;
@@ -726,6 +736,7 @@ button.accordion.active:after {
     background-color: #00AFEF;
     border-radius: 4px;
     margin-top: 70px;
+    text-decoration: none;
 }
 .start__now__btn:hover{
     background-color: white;
@@ -978,7 +989,7 @@ button.accordion.active:after {
     width: 100%;
 }
 .about__us_hero_bg img{
-    height: 45vh;
+    height: 50vh;
     width: 100% !important;
     margin-top: 24px;
 }
