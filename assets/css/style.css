@@ -2460,8 +2460,8 @@ color: #00AFEF !important;
         line-height: 32px;
         padding-top: 10px;
     }
-    .contact_us .about__us_hero_sec .about__us_title{
-        margin-top: 70px;
+    .contact_us__page .about__us_hero_sec .about__us_title{
+        margin-top: 80px !important;
     }
     .our_team__title {
         margin-top: 12px;
