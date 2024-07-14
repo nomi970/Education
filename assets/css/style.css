@@ -1217,11 +1217,12 @@ button.accordion.active:after {
     margin-top: 15px;
 }
 .our_team_main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: 1fr; */
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1440px;
     row-gap: 80px;
     margin-top: 70px;
@@ -2459,8 +2460,8 @@ color: #00AFEF !important;
         line-height: 32px;
         padding-top: 10px;
     }
-    .about__us_hero_sec .about__us_title{
-        margin-top: 50px;
+    .contact_us .about__us_hero_sec .about__us_title{
+        margin-top: 70px;
     }
     .our_team__title {
         margin-top: 12px;
