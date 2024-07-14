@@ -120,19 +120,19 @@ h1,h2,h3,h4,h5,p{
 }
 @keyframes randomDotsMotion {
     0% {
-        transform: translate(20, -10);
+        transform: translate(80, -90);
     }
     25% {
-        transform: translate(30px, -20px);
+        transform: translate(120px, -120px);
     }
     50% {
-        transform: translate(-40px, -23px);
+        transform: translate(-160px, 93px);
     }
     75% {
-        transform: translate(-50px, 20px);
+        transform: translate(-150px, 20px);
     }
     100% {
-        transform: translate(10, -40);
+        transform: translate(100, -100);
     }
 }
 .dots {
@@ -153,9 +153,9 @@ h1,h2,h3,h4,h5,p{
     height: 36px !important; 
 }
 .dots:nth-child(2) {
-    top: 50px;
+    top: -50px;
     right: 200px;
-    animation: randomDotsMotion 6s infinite;
+    animation: randomDotsMotion 7s infinite;
 }
 .d_3 img{
     width: 26px !important;
@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,p{
 .dots:nth-child(3) {
     bottom: 100px;
     left: 0;
-    animation: randomDotsMotion 7s infinite;
+    animation: randomDotsMotion 4s infinite;
 }
 .d_2 img{
     width: 26px !important;
@@ -172,8 +172,8 @@ h1,h2,h3,h4,h5,p{
 }
 .dots:nth-child(4) {
     top: 100px;
-    left: 0;
-    animation: randomDotsMotion 8s infinite;
+    left: 150px;
+    animation: randomDotsMotion 3s infinite;
 }
 .d_4 img{
     width: 44px !important;
@@ -182,7 +182,7 @@ h1,h2,h3,h4,h5,p{
 .dots:nth-child(5) {
     bottom: 0;
     right: 0;
-    animation: randomDotsMotion 9s infinite;
+    animation: randomDotsMotion 3s infinite;
 }
 .d_5 img{
     width: 22px !important;
@@ -190,8 +190,8 @@ h1,h2,h3,h4,h5,p{
 }
 .dots:nth-child(6) {
     bottom: 0%;
-    left: 20%;
-    animation: randomDotsMotion 10s infinite;
+    left: 50%;
+    animation: randomDotsMotion 4s infinite;
 }
 .our__partner_main {
     max-width: 800px;
@@ -953,7 +953,7 @@ button.accordion.active:after {
     max-width: 696px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .about__us_title p{
     font-family: Outfit;
@@ -973,8 +973,13 @@ button.accordion.active:after {
     color: #FFFFFF;
     padding-top: 19px;
 }
-.about__us_hero_bg img{
+.about__us_hero_bg{
     height: 100%;
+    width: 100%;
+}
+.about__us_hero_bg img{
+    height: 45vh;
+    width: 100% !important;
     margin-top: 24px;
 }
 .about__count_down{
